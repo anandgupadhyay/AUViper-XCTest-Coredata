@@ -19,3 +19,9 @@ class Common: NSObject {
         //["name": "Elephant","type": "Domestic","diet":"Herbivore","serialNo":"8"]
     }
 }
+
+/*
+ To get build settigns on BUild Phase scripts
+ https://stackoverflow.com/questions/18776626/get-current-scheme-name-from-run-script-phase
+ 
+ */

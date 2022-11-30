@@ -159,9 +159,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEA3152A2937598F00F2914B /* Build configuration list for PBXNativeTarget "AUViperDemo" */;
 			buildPhases = (
+				FEA315462937817D00F2914B /* ShellScript */,
 				FEA315122937598A00F2914B /* Sources */,
 				FEA315132937598A00F2914B /* Frameworks */,
-				FEA315462937817D00F2914B /* ShellScript */,
+				FE7F4EC12937AE8700EF54A8 /* Log Build Settings */,
 				FEA315142937598A00F2914B /* Resources */,
 			);
 			buildRules = (
@@ -220,6 +221,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		FE7F4EC12937AE8700EF54A8 /* Log Build Settings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Log Build Settings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export\n";
+		};
 		FEA315462937817D00F2914B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,7 +254,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#   ON/OFF Script Toggle (script ON with #, script OFF without #)\n#exit 0\n\n#   App vesion / Build version constants\nsourceFilePath=\"$PROJECT_DIR/$PROJECT_NAME/Base.lproj/LaunchScreen.storyboard\"\nversionNumber=\"$MARKETING_VERSION\"\nbuildNumber=\"$CURRENT_PROJECT_VERSION\"\n\n#   Output version & build numbers into a label on LaunchScreen.storyboard\nsed -i .bak -e \"/userLabel=\\\"APP_VERSION\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"$versionNumber($buildNumber)\\\"/\" \"$sourceFilePath\"\n";
+			shellScript = "#   ON/OFF Script Toggle (script ON with #, script OFF without #)\n#exit 0\n\n#   App vesion / Build version constants\nsourceFilePath=\"$PROJECT_DIR/$PROJECT_NAME/Base.lproj/LaunchScreen.storyboard\"\nversionNumber=\"$MARKETING_VERSION\"\nbuildNumber=\"$CURRENT_PROJECT_VERSION\"\n\n#   Output version & build numbers into a label on LaunchScreen.storyboard\nsed -i .bak -e \"/userLabel=\\\"APP_VERSION\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"$versionNumber($buildNumber)\\\"/\" \"$sourceFilePath\"\n\n#   Dislay Name vesion\nSCHEME_NAME=$(/usr/libexec/PlistBuddy -c \"Print SchemeName\" \"$INFOPLIST_FILE\")\n\n#   Output Display Name into a label on LaunchScreen.storyboard\nsed -i .bak -e \"/userLabel=\\\"APP_DISPLAY_NAME\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"$SCHEME_NAME\\\"/\" \"$sourceFilePath\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

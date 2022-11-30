@@ -37,8 +37,8 @@ extension AnimalListView: UITableViewDataSource, UITableViewDelegate {
         let cell = animalTblView.dequeueReusableCell(withIdentifier: "animalCell", for: indexPath)
         let animal = animalList[indexPath.row]
         cell.textLabel?.text = animal.name
-        print(animal.type as String)
-        cell.detailTextLabel?.text =  animal.type
+        cell.detailTextLabel?.text =  animal.type + "\n" + animal.diet
+        cell.imageView?.image =  UIImage(named: animal.name)
         return cell
     }
     
