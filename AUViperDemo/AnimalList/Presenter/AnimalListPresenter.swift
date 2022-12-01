@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import UIKit
+
 class AnimalListPresenter: AnimalListPresenterProtocol {
     
-    func showAnimalSelection(with animal: Animal, from view: ViewController) {
+    func showAnimalSelection(with animal: Animal, from view: UIViewController) {
         
     }
     

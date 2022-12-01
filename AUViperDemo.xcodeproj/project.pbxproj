@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE53B1D72938BCA00074BF61 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE53B1D62938BCA00074BF61 /* CoreDataManager.swift */; };
+		FE53B1D92938BE980074BF61 /* ColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE53B1D82938BE980074BF61 /* ColorTransformer.swift */; };
+		FE53B1DC2938C00A0074BF61 /* Animal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE53B1DA2938C00A0074BF61 /* Animal+CoreDataClass.swift */; };
+		FE53B1E52938FBE00074BF61 /* AUViperDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE53B1E42938FBE00074BF61 /* AUViperDemoTests.swift */; };
+		FE9E8A90293872A2009EE34A /* AUCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE9E8A8E293872A1009EE34A /* AUCoreData.xcdatamodeld */; };
 		FEA3151A2937598A00F2914B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA315192937598A00F2914B /* AppDelegate.swift */; };
 		FEA3151C2937598A00F2914B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA3151B2937598A00F2914B /* SceneDelegate.swift */; };
-		FEA3151E2937598A00F2914B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA3151D2937598A00F2914B /* ViewController.swift */; };
 		FEA315212937598A00F2914B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA3151F2937598A00F2914B /* Main.storyboard */; };
 		FEA315232937598F00F2914B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA315222937598F00F2914B /* Assets.xcassets */; };
 		FEA315262937598F00F2914B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA315242937598F00F2914B /* LaunchScreen.storyboard */; };
 		FEA31537293763D600F2914B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA31536293763D600F2914B /* Common.swift */; };
-		FEA315392937657A00F2914B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA315382937657900F2914B /* Animal.swift */; };
+		FEA315392937657A00F2914B /* Animal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA315382937657900F2914B /* Animal+CoreDataProperties.swift */; };
 		FEA3153D29376EB000F2914B /* AnimalListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA3153C29376EB000F2914B /* AnimalListInteractor.swift */; };
 		FEA3153F29376FE200F2914B /* AnimalListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA3153E29376FE200F2914B /* AnimalListProtocols.swift */; };
 		FEA315412937729E00F2914B /* AnimalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA315402937729E00F2914B /* AnimalListView.swift */; };
@@ -22,17 +26,32 @@
 		FEA31545293774B200F2914B /* AnimalListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA31544293774B200F2914B /* AnimalListWireframe.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FE53B1E62938FBE00074BF61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEA3150E2937598A00F2914B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEA315152937598A00F2914B;
+			remoteInfo = AUViperDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FE53B1D62938BCA00074BF61 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FE53B1D82938BE980074BF61 /* ColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTransformer.swift; sourceTree = "<group>"; };
+		FE53B1DA2938C00A0074BF61 /* Animal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE53B1E22938FBE00074BF61 /* AUViperDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUViperDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE53B1E42938FBE00074BF61 /* AUViperDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUViperDemoTests.swift; sourceTree = "<group>"; };
+		FE9E8A8F293872A1009EE34A /* AUCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AUCoreData.xcdatamodel; sourceTree = "<group>"; };
 		FEA315162937598A00F2914B /* AUViperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUViperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA315192937598A00F2914B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEA3151B2937598A00F2914B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEA3151D2937598A00F2914B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEA315202937598A00F2914B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEA315222937598F00F2914B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA315252937598F00F2914B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEA315272937598F00F2914B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEA31536293763D600F2914B /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		FEA315382937657900F2914B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		FEA315382937657900F2914B /* Animal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FEA3153C29376EB000F2914B /* AnimalListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListInteractor.swift; sourceTree = "<group>"; };
 		FEA3153E29376FE200F2914B /* AnimalListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListProtocols.swift; sourceTree = "<group>"; };
 		FEA315402937729E00F2914B /* AnimalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListView.swift; sourceTree = "<group>"; };
@@ -41,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FE53B1DF2938FBE00074BF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEA315132937598A00F2914B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +77,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE53B1E32938FBE00074BF61 /* AUViperDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE53B1E42938FBE00074BF61 /* AUViperDemoTests.swift */,
+			);
+			path = AUViperDemoTests;
+			sourceTree = "<group>";
+		};
+		FE9E8A8D2938719A009EE34A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FE9E8A8E293872A1009EE34A /* AUCoreData.xcdatamodeld */,
+				FE53B1D62938BCA00074BF61 /* CoreDataManager.swift */,
+				FE53B1D82938BE980074BF61 /* ColorTransformer.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		FEA3150D2937598A00F2914B = {
 			isa = PBXGroup;
 			children = (
 				FEA315182937598A00F2914B /* AUViperDemo */,
+				FE53B1E32938FBE00074BF61 /* AUViperDemoTests */,
 				FEA315172937598A00F2914B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				FEA315162937598A00F2914B /* AUViperDemo.app */,
+				FE53B1E22938FBE00074BF61 /* AUViperDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,10 +116,10 @@
 		FEA315182937598A00F2914B /* AUViperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FE9E8A8D2938719A009EE34A /* CoreData */,
 				FEA3152E29375B1700F2914B /* AnimalList */,
 				FEA315192937598A00F2914B /* AppDelegate.swift */,
 				FEA3151B2937598A00F2914B /* SceneDelegate.swift */,
-				FEA3151D2937598A00F2914B /* ViewController.swift */,
 				FEA3151F2937598A00F2914B /* Main.storyboard */,
 				FEA315222937598F00F2914B /* Assets.xcassets */,
 				FEA315242937598F00F2914B /* LaunchScreen.storyboard */,
@@ -99,7 +145,8 @@
 		FEA3152F293763C300F2914B /* Enttity */ = {
 			isa = PBXGroup;
 			children = (
-				FEA315382937657900F2914B /* Animal.swift */,
+				FE53B1DA2938C00A0074BF61 /* Animal+CoreDataClass.swift */,
+				FEA315382937657900F2914B /* Animal+CoreDataProperties.swift */,
 			);
 			path = Enttity;
 			sourceTree = "<group>";
@@ -155,14 +202,31 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FE53B1E12938FBE00074BF61 /* AUViperDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE53B1E82938FBE00074BF61 /* Build configuration list for PBXNativeTarget "AUViperDemoTests" */;
+			buildPhases = (
+				FE53B1DE2938FBE00074BF61 /* Sources */,
+				FE53B1DF2938FBE00074BF61 /* Frameworks */,
+				FE53B1E02938FBE00074BF61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE53B1E72938FBE00074BF61 /* PBXTargetDependency */,
+			);
+			name = AUViperDemoTests;
+			productName = AUViperDemoTests;
+			productReference = FE53B1E22938FBE00074BF61 /* AUViperDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FEA315152937598A00F2914B /* AUViperDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEA3152A2937598F00F2914B /* Build configuration list for PBXNativeTarget "AUViperDemo" */;
 			buildPhases = (
-				FEA315462937817D00F2914B /* ShellScript */,
 				FEA315122937598A00F2914B /* Sources */,
 				FEA315132937598A00F2914B /* Frameworks */,
-				FE7F4EC12937AE8700EF54A8 /* Log Build Settings */,
+				FE9E8A8C29385BB9009EE34A /* ShellScript */,
 				FEA315142937598A00F2914B /* Resources */,
 			);
 			buildRules = (
@@ -184,6 +248,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					FE53B1E12938FBE00074BF61 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FEA315152937598A00F2914B;
+					};
 					FEA315152937598A00F2914B = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -203,11 +271,19 @@
 			projectRoot = "";
 			targets = (
 				FEA315152937598A00F2914B /* AUViperDemo */,
+				FE53B1E12938FBE00074BF61 /* AUViperDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FE53B1E02938FBE00074BF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEA315142937598A00F2914B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,25 +297,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FE7F4EC12937AE8700EF54A8 /* Log Build Settings */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Log Build Settings";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export\n";
-		};
-		FEA315462937817D00F2914B /* ShellScript */ = {
+		FE9E8A8C29385BB9009EE34A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,29 +312,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#   ON/OFF Script Toggle (script ON with #, script OFF without #)\n#exit 0\n\n#   App vesion / Build version constants\nsourceFilePath=\"$PROJECT_DIR/$PROJECT_NAME/Base.lproj/LaunchScreen.storyboard\"\nversionNumber=\"$MARKETING_VERSION\"\nbuildNumber=\"$CURRENT_PROJECT_VERSION\"\n\n#   Output version & build numbers into a label on LaunchScreen.storyboard\nsed -i .bak -e \"/userLabel=\\\"APP_VERSION\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"$versionNumber($buildNumber)\\\"/\" \"$sourceFilePath\"\n\n#   Dislay Name vesion\nSCHEME_NAME=$(/usr/libexec/PlistBuddy -c \"Print SchemeName\" \"$INFOPLIST_FILE\")\n\n#   Output Display Name into a label on LaunchScreen.storyboard\nsed -i .bak -e \"/userLabel=\\\"APP_DISPLAY_NAME\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"$SCHEME_NAME\\\"/\" \"$sourceFilePath\"\n";
+			shellScript = "#   ON/OFF Script Toggle (script ON with #, script OFF without #)\n#exit 0\n\n#   App vesion / Build version constants\nsourceFilePath=\"$PROJECT_DIR/$PROJECT_NAME/Base.lproj/LaunchScreen.storyboard\"\nversionNumber=\"$MARKETING_VERSION\"\nbuildNumber=\"$CURRENT_PROJECT_VERSION\"\n\n#   Output version & build numbers into a label on LaunchScreen.storyboard\nsed -i .bak -e \"/userLabel=\\\"APP_VERSION\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"$versionNumber($buildNumber)\\\"/\" \"$sourceFilePath\"\n\n#   Dislay Name vesion\ndisplayName = \"$TARGET_NAME\"\n\necho displayName \n#   Output Display Name into a label on LaunchScreen.storyboard\nsed -i .bak -e \"/userLabel=\\\"APP_DISPLAY_NAME\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"$displayName\\\"/\" \"$sourceFilePath\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FE53B1DE2938FBE00074BF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE53B1E52938FBE00074BF61 /* AUViperDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEA315122937598A00F2914B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FEA315412937729E00F2914B /* AnimalListView.swift in Sources */,
 				FEA31537293763D600F2914B /* Common.swift in Sources */,
+				FE9E8A90293872A2009EE34A /* AUCoreData.xcdatamodeld in Sources */,
+				FE53B1D92938BE980074BF61 /* ColorTransformer.swift in Sources */,
 				FEA31545293774B200F2914B /* AnimalListWireframe.swift in Sources */,
-				FEA3151E2937598A00F2914B /* ViewController.swift in Sources */,
 				FEA3153F29376FE200F2914B /* AnimalListProtocols.swift in Sources */,
 				FEA3151A2937598A00F2914B /* AppDelegate.swift in Sources */,
 				FEA3151C2937598A00F2914B /* SceneDelegate.swift in Sources */,
-				FEA315392937657A00F2914B /* Animal.swift in Sources */,
+				FEA315392937657A00F2914B /* Animal+CoreDataProperties.swift in Sources */,
 				FEA3153D29376EB000F2914B /* AnimalListInteractor.swift in Sources */,
 				FEA315432937744300F2914B /* AnimalListPresenter.swift in Sources */,
+				FE53B1DC2938C00A0074BF61 /* Animal+CoreDataClass.swift in Sources */,
+				FE53B1D72938BCA00074BF61 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE53B1E72938FBE00074BF61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEA315152937598A00F2914B /* AUViperDemo */;
+			targetProxy = FE53B1E62938FBE00074BF61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FEA3151F2937598A00F2914B /* Main.storyboard */ = {
@@ -298,6 +375,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FE53B1E92938FBE00074BF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38L7ZMD32K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.au.sl.ios.AUViperDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AUViperDemo.app/AUViperDemo";
+			};
+			name = Debug;
+		};
+		FE53B1EA2938FBE00074BF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38L7ZMD32K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.au.sl.ios.AUViperDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AUViperDemo.app/AUViperDemo";
+			};
+			name = Release;
+		};
 		FEA315282937598F00F2914B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -473,6 +586,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FE53B1E82938FBE00074BF61 /* Build configuration list for PBXNativeTarget "AUViperDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE53B1E92938FBE00074BF61 /* Debug */,
+				FE53B1EA2938FBE00074BF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FEA315112937598A00F2914B /* Build configuration list for PBXProject "AUViperDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -492,6 +614,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE9E8A8E293872A1009EE34A /* AUCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE9E8A8F293872A1009EE34A /* AUCoreData.xcdatamodel */,
+			);
+			currentVersion = FE9E8A8F293872A1009EE34A /* AUCoreData.xcdatamodel */;
+			path = AUCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FEA3150E2937598A00F2914B /* Project object */;
 }

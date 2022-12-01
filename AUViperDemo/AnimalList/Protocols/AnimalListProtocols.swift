@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+
 protocol AnimalListViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     func showAnimals(with animals: [Animal])
@@ -18,7 +20,7 @@ protocol AnimalListPresenterProtocol: AnyObject {
     var wireframe: AnimalListWireFrameProtocol? {get set}
 
     func viewDidLoad()
-    func showAnimalSelection(with animal: Animal, from view: ViewController)
+    func showAnimalSelection(with animal: Animal, from view: UIViewController)
 }
 
 protocol AnimalListInputInteractorProtocol: AnyObject {
