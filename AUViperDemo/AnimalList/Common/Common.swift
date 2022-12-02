@@ -59,3 +59,15 @@ class Common: NSObject {
 
 
 
+/*
+ # Type a script or drag a script file from your workspace to insert its#   Dislay Name vesion
+
+ sourceFilePath="$PROJECT_DIR/$PROJECT_NAME/Base.lproj/LaunchScreen.storyboard"
+ versionNumber = "$MARKETING_VERSION"
+ #   Output Display Name into a label on LaunchScreen.storyboard
+ sed -i .bak -e "/userLabel=\"APP_DISPLAY_NAME\"/s/text=\"[^\"]*\"/text=\"$versionNumber\"/" "$sourceFilePath" path.
+
+
+ */
+
+

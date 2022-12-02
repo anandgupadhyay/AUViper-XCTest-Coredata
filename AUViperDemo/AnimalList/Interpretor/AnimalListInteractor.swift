@@ -13,6 +13,6 @@ class AnimalListInteractor: AnimalListInputInteractorProtocol {
     
     weak var presenter: AnimalListOutputInteractorProtocol?
     func getAnimalList(){
-        presenter?.animalListDidFetch(animalList: AppDelegate.sharedAppDelegate.coreDataManaer.retriveAnimalsFromCD())
+        presenter?.animalListDidFetch(animalList: AppDelegate.sharedAppDelegate.coreDataManaer.retriveAnimals())
     }
 }

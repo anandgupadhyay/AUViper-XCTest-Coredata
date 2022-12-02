@@ -16,7 +16,11 @@ class CoreDataManager {
 
     init(modelName: String){
         self.modelName = modelName
-        addAnimalsToCD()
+        
+        
+        if  (retriveAnimals().count == 0) {
+            addAnimals()
+        }
     }
 
     private lazy var storeContainer: NSPersistentContainer = {
@@ -39,7 +43,7 @@ class CoreDataManager {
         }
     }
 
-    func addAnimalsToCD(){
+    func addAnimals(){
 
         let managedContext  = storeContainer.viewContext
         let iterator = {
@@ -51,7 +55,7 @@ class CoreDataManager {
             animalToInsert.setValue(listItem["name"], forKeyPath:#keyPath(Animal.name))
             animalToInsert.setValue(listItem["type"], forKeyPath: #keyPath(Animal.type))
             animalToInsert.setValue(listItem["diet"], forKeyPath: #keyPath(Animal.diet))
-            animalToInsert.setValue(listItem["serialNo"], forKeyPath: #keyPath(Animal.serialNo))
+            animalToInsert.setValue(Int(listItem["serialNo"]!), forKeyPath: #keyPath(Animal.serialNo))
             animalToInsert.setValue(UIColor(displayP3Red: iterator()/255, green: iterator()/255, blue: iterator()/255, alpha: 1), forKeyPath: #keyPath(Animal.color))
         }
 
@@ -62,7 +66,7 @@ class CoreDataManager {
         }
     }
 
-    public func retriveAnimalsFromCD() -> [Animal] {
+    public func retriveAnimals() -> [Animal] {
         let animalFetch: NSFetchRequest<Animal> = Animal.fetchRequest()
         let sortByName = NSSortDescriptor(key: #keyPath(Animal.name), ascending: false)
         animalFetch.sortDescriptors = [sortByName]
@@ -77,7 +81,7 @@ class CoreDataManager {
     }
 
 
-    public func deleteAnimal(_ animal: Animal) -> Bool {
+    public func removeAnimal(_ animal: Animal) -> Bool {
         let animalFetch: NSFetchRequest<Animal> = Animal.fetchRequest()
         animalFetch.predicate = NSPredicate(format: "serialNo = %@", animal.serialNo)
         do {
@@ -96,6 +100,7 @@ class CoreDataManager {
             print("Fetch Error:%@\(error.localizedDescription)")
             return false;
         }
+        
     }
     
     public func removeAllAnimals(animalList: [Animal] ) -> Bool{

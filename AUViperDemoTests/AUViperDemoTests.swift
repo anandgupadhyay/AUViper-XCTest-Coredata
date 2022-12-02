@@ -16,10 +16,10 @@ class AUViperDemoTests: XCTestCase {
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        let animalList: [Animal] = AppDelegate.sharedAppDelegate.coreDataManaer.retriveAnimalsFromCD()
-        AppDelegate.sharedAppDelegate.coreDataManaer.removeAllAnimals(animalList: animalList)
+//        let animalList: [Animal] = AppDelegate.sharedAppDelegate.coreDataManaer.retriveAnimals()
+//        _ = AppDelegate.sharedAppDelegate.coreDataManaer.removeAllAnimals(animalList: animalList)
     }
-
+    
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -36,18 +36,33 @@ class AUViperDemoTests: XCTestCase {
     }
 }
 
-final class StringExtensionsTests: XCTestCase {
-    func testAnimalCount() {
-        //add
-        AppDelegate.sharedAppDelegate.coreDataManaer.addAnimalsToCD()
-        let animalList: [Animal] = AppDelegate.sharedAppDelegate.coreDataManaer.retriveAnimalsFromCD()
-        XCTAssert(animalList.count == 0, "Animal List is empty")
+
+
+final class CoreDataManagerTests: XCTestCase {
+    func testEmptyAnimalList() {
+        //check empty animal list
+        let animalList: [Animal] = AppDelegate.sharedAppDelegate.coreDataManaer.retriveAnimals()
+        XCTAssert(animalList.count != 0, "Animal List is empty")
     }
     
-    func testEmptyListOfUsers() {
-        let list: [String] =  ["Tigor", "Lion", "Cow"]
-        XCTAssert(list.count == 0)
-        XCTAssertTrue(list.users.count == 0)
-        XCTAssertEqual(list.users.count, 0)
+    func testAnimalDeletion() throws {
+        let animalList: [Animal] = AppDelegate.sharedAppDelegate.coreDataManaer.retriveAnimals()
+        let cow = animalList.first {$0.name?.lowercased() == "cow"}
+        let deleted = try AppDelegate.sharedAppDelegate.coreDataManaer.removeAnimal(XCTUnwrap(cow))
+        XCTAssertEqual(deleted, true,"animal name are not equal")
     }
+    
+    func testAnimalFetch(){
+        let animalList: [Animal] = AppDelegate.sharedAppDelegate.coreDataManaer.retriveAnimals()
+        let cow = animalList.first {$0.name?.lowercased() == "cow"}
+
+        XCTAssertEqual(cow?.name?.lowercased(), "cow","animal name are not equal")
+    }
+    
+//    func testEmptyListOfUsers() {
+//        let list: [String] =  ["Tigor", "Lion", "Cow"]
+//        XCTAssert(list.count == 0)
+//        XCTAssertTrue(list.count == 0)
+//        XCTAssertEqual(list.count, 0)
+//    }
 }
